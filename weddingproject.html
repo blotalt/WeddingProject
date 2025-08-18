@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <link rel = "stylesheet" href=" http://bennettfeely.com/clippy">
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+
+    header {
+        width: 100%;
+        height: 100px;
+    }
+
+    nav {
+
+        width: 100%;
+        height: 75px;
+        box-shadow: rgba(0, 0, 0.1) 0px 4px 12px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    ul {
+        display: flex;
+        list-style: none;
+        gap: 50x;
+
+    }
+
+    li a {
+        font-size: 25px;
+        text-decoration: none;
+        color: gray;
+        font-weight: 100;
+    }
+
+    li a:hover {
+        color: black;
+    }
+
+    main {
+        width: 100%;
+        height: 100vh;
+
+
+    }
+    .gay{
+        background-color: blueviolet;
+        color: red;
+        position: fixed;
+        width: 100%;
+        text-align: center;
+
+    }
+
+    section {
+        width: 100%;
+        height: 550px;
+        overflow: hidden;
+        background-color: white;
+        position: relative;
+    }
+
+    .slide {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: aqua;
+        opacity: 0;
+        animation: Photes 15s infinite;
+    }
+
+    .slide img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .slide:nth-child(1) {
+        animation-delay: 0s;
+
+    }
+
+    .slide:nth-child(2) {
+        animation-delay: 3s;
+    }
+
+    .slide:nth-child(3) {
+        animation-delay: 9s;
+    }
+
+    .slide:nth-child(4) {
+        animation-delay: 12s;
+    }
+
+    @keyframes Photes {
+        0% {
+            opacity: 0;
+        }
+
+        10% {
+            opacity: 1;
+        }
+
+        20% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+
+    .section1{
+        width: 100%;
+        height: 200px;
+        justify-content: center;
+        position: relative;
+        padding: 90px 0 60px;
+    }
+    .section1 .text{
+        position: relative;
+        height: 160px;
+        display: block;
+        text-align: center;
+    }
+
+    .section1 .text1 .our p {
+        position: absolute;
+        display: flex;
+        top: 100px;
+        gap: 10px;
+    }
+ 
+    .section1 .text .our p {
+        font-size: 45px;
+        color: red;
+        margin-top: -25px;
+        font-family: "Hanuman", serif;
+
+    }
+    .container{
+        display:flex;
+        align-items: stretch;
+        gap: 32px;
+        
+        margin: 0 auto;
+    }
+
+    .right-side{
+        flex:1;
+        padding: 0 16px;
+    }
+
+    .section1 .text .our span {
+        width: 100%;
+        height: 600px;
+        
+    }
+    .left-side, .ride-side {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+   .left-side {
+    border-right:5px solid;
+    justify-content: flex-start;
+
+   }
+   .ride-side{
+    justify-content: flex-end;
+    align-items: flex-end;
+   }
+
+    .container .left-side {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        border-right: 5px solid black;
+     
+    }
+    .container .left-side  .fuck-button1{
+         padding: 15px 20px;
+        margin-left: 20px;
+        color: white;
+        border-radius: 15px;
+        background-color: seagreen;
+        position: relative;
+        top: 10px;
+
+        
+    }
+    .container .ride-side {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+       
+
+    }
+   
+    .container .left-side .box1 .photo {
+        padding-top: 10px;
+        width: 200px;
+        height: 200px;
+        background-color: tomato;
+        clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    }
+   
+    .photo img {
+        width: 100%;
+        margin-left: 20px;
+
+    }
+
+    .container .ride-side button {
+        padding: 15px 20px;
+        margin-left: 20px;
+
+        border: none;
+        color: white;
+        border-radius: 15px;
+        background-color: seagreen;
+    }
+    .story-title {
+        font-family: "Great Vibes", cursive;
+        font-size: 48px;
+        color: red;
+        margin:0 0 12px;
+        margin-bottom: 15px;
+    }
+    .story-text{
+        font-size: 18px;
+        line-height: 1.7;
+        color: gray;
+        margin-bottom: 25px;
+    }
+    .box1{
+        background: white;
+        border-radius: 14px;
+        padding: 30px 30px 30px;
+    }
+    .fuck-button{
+        position: absolute;
+        right: 700px;
+        top: 1000px;
+    }
+   
+    .love-wrap{
+        padding: 0 28px;
+        text-align: left;
+    }
+    .love-title{
+        font-family: "Great Vibes", cursive;
+        font-size: 56px;
+        line-height: 1;
+        color: red;
+        margin: 6px 0 18px;
+
+    }
+    .love-text{
+        
+        font-size: 18px;
+        line-height: 1.8;
+        margin: 0 0 24px;
+    }
+    .hehe{
+         position:static;
+        left: 900px;
+        top: 1500px;
+        background-color: seagreen;
+        color: white;
+        border-radius: 15px;
+         padding: 15px 20px;
+        margin-left: 20px;
+    }
+    .hexagon {
+  width: 400px;
+  height: 200px;
+  background: #3498db;
+  -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+        background: url("https://plus.unsplash.com/premium_photo-1753985633451-91ae0ac80456?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}  
+    .square{
+        width: 400px;
+        height: 400px;
+        clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+        background: url("https://plus.unsplash.com/premium_photo-1753985633451-91ae0ac80456?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    }
+    .kdmv{
+         width: 400px;
+  height: 200px;
+  background: #3498db;
+  -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+        background: url("https://plus.unsplash.com/premium_photo-1753985633451-91ae0ac80456?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); 
+    }
+ 
+  
+</style>
+
+<body>
+    <div class = "gay"> 
+        <h1>Sugar mommy and sugar daddy are the new future</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#">Our story</a></li> &nbsp;&nbsp;
+            <li><a href="#">Wedding</a></li> &nbsp;&nbsp;
+            <li><a href="#">Our story</a></li> &nbsp;&nbsp;
+            <li><a href="#">RSVP</a></li> &nbsp;&nbsp;
+            <li><a href="#">Gift</a></li> &nbsp;&nbsp;
+            <li><a href="#">Gift Book</a></li> &nbsp;&nbsp;
+            <li><a href="#">Contact</a></li> &nbsp;&nbsp;
+        </ul>
+
+    </nav>
+    <main>
+        <section>
+            <div class="slide">
+                <img src="https://plus.unsplash.com/premium_photo-1663076211121-36754a46de8d?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="">
+            </div>
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="">
+            </div>
+            <div class="slide">
+                <img src="https://plus.unsplash.com/premium_photo-1690148812608-9942834931a1?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="">
+            </div>
+
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1425421543490-6a133856ff32?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="">
+            </div>
+            <div class="slide">
+                <img src="" alt="">
+            </div>
+        </section>
+
+        <section class="section1">
+            <div class="text">
+                <h1>LOVESTORY</h1>
+                <div class="our">
+                    <span></span>
+
+                    <p>Story</p>
+                    <span></span>
+                </div>
+
+            </div>
+        </section>
+        <div class="container">
+            <div class="left-side">
+                <h2 class = "story-title">Our first met</h2>
+                <div class="box1">
+                    <p class = "story-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus facere non harum error ad,
+                        voluptate corrupti blanditiis debitis numquam laudantium magni dolorum hic voluptas vitae velit
+                        maiores reiciendis minus odio!
+                        Adipisci ducimus nulla veniam ex, fuga unde incidunt perspiciatis, illo doloremque nesciunt
+                        explicabo eius quod ut odio impedit, eum dolore tenetur ab consequatur natus eveniet inventore
+                        laboriosam! Voluptate, alias perferendis?
+                        Veritatis, ipsum cupiditate. Aliquam quo quia dolorum possimus quaerat sequi praesentium aliquid
+                        sint? Ducimus assumenda quod doloribus totam enim. Adipisci iure fuga ut tempore architecto
+                        porro perspiciatis quos cumque enim!
+                       !</p>
+                       <div class = "hexagon"></div>
+                       <button class = "hehe">  25 August 2018</button>
+                       <div class = "kdmv"></div>
+                </div class="heart-photo">
+                <!-- <img src="https://staticg.sportskeeda.com/editor/2024/07/0a5b7-17198722274311-1920.jpg" alt=""> -->
+            </div>
+            
+            <div class = "container">
+            <div class="ride-side">
+                <div class = "boxing"></div>
+                <button class = "fuck-button"> 5 July 2018</button>
+                <section class = "love-card">
+                    <div class = "love-wrap">
+                        <h2 class = "love-title">Our first dating</h2>
+                        <p class = "love-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, illo aliquam commodi, sequi illum officia eaque necessitatibus est voluptas doloremque quas explicabo soluta aliquid facere itaque totam iusto obcaecati similique!
+                            Totam ex nesciunt assumenda cupiditate? Voluptate atque in veniam dicta! Cupiditate accusantium animi consectetur odio, quibusdam architecto dicta quam ipsa suscipit unde officia qui esse, eum eius consequatur, incidunt illum.
+                        </p>
+                        <div class = "square"></div>
+                       
+                        
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
