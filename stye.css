@@ -1,0 +1,615 @@
+     * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+
+    header {
+        width: 100%;
+        height: 100px;
+    }
+
+    nav {
+
+        width: 100%;
+        height: 75px;
+        box-shadow: rgba(0, 0, 0.1) 0px 4px 12px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    ul {
+        display: flex;
+        list-style: none;
+        gap: 50x;
+
+    }
+
+    li a {
+        font-size: 25px;
+        text-decoration: none;
+        color: gray;
+        font-weight: 100;
+    }
+
+    li a:hover {
+        color: black;
+        text-decoration: underline;
+    }
+
+    main {
+        width: 100%;
+        height: 100vh;
+
+
+    }
+
+
+    section {
+        width: 100%;
+        height: 550px;
+        overflow: hidden;
+        background-color: white;
+        position: relative;
+    }
+
+    .slide {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: aqua;
+        opacity: 0;
+        animation: Photes 15s infinite;
+    }
+
+    .slide img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .slide:nth-child(1) {
+        animation-delay: 0s;
+
+    }
+
+    .slide:nth-child(2) {
+        animation-delay: 3s;
+    }
+
+    .slide:nth-child(3) {
+        animation-delay: 9s;
+    }
+
+    .slide:nth-child(4) {
+        animation-delay: 12s;
+    }
+
+    @keyframes Photes {
+        0% {
+            opacity: 0;
+        }
+
+        10% {
+            opacity: 1;
+        }
+
+        20% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    } 
+
+    /* .section1 {
+        width: 100%;
+        height: 200px;
+        justify-content: center;
+        position: relative;
+        padding: 90px 0 60px;
+    }
+
+    .section1 .text {
+        position: relative;
+        height: 160px;
+        display: block;
+        text-align: center;
+    }
+
+    .section1 .text1 .our p {
+        position: absolute;
+        display: flex;
+        top: 100px;
+        gap: 10px;
+    }
+
+    .section1 .text .our p {
+        font-size: 45px;
+        color: red;
+        margin-top: -25px;
+        font-family: "Hanuman", serif;
+
+    }
+
+    .container {
+        display: flex;
+        align-items: stretch;
+        gap: 32px;
+        width: 100%;
+        height: 600px;
+        background: #000;
+
+        margin: 0 auto;
+    }
+
+
+
+    .section1 .text .our span {
+        width: 100%;
+        height: 600px;
+
+    }
+
+    .left-side,
+    .ride-side {
+        flex: 1;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .ride-side {
+        justify-content: flex-end;
+        align-items: flex-end;
+             width: 50%;
+        height: 100%;
+        background-color: aliceblue;
+    }  */
+/* 
+    .container .left-side {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        background-color: aliceblue;
+        justify-content: center;
+        border-right: 5px solid black;
+
+    } */
+
+    /* .container .left-side .fuck-button1 {
+        padding: 15px 20px;
+        margin-left: 20px;
+        color: white;
+        border-radius: 15px;
+        background-color: seagreen;
+        position: relative;
+        top: 10px;
+    } */
+
+ 
+
+    /* .container .left-side .box1 .photo {
+        padding-top: 10px;
+        width: 200px;
+        height: 200px;
+        background-color: tomato;
+        clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    } */
+/* 
+    .container2 {
+        position: static;
+        top: 600px;
+        right: 200px;
+    }
+
+    .photo img {
+        width: 100%;
+        margin-left: 20px;
+
+    }
+
+    .container .ride-side button {
+        padding: 30px 50px;
+        margin-left: 20px;
+
+        border: none;
+        color: white;
+        border-radius: 15px;
+        background-color: seagreen;
+    }
+
+    .story-title {
+        font-family: "Great Vibes", cufrsive;
+        font-size: 48px;
+        color: red;
+        margin: 0 0 12px;
+        margin-bottom: 15px;
+    }
+
+    .story-text {
+        font-size: 18px;
+        line-height: 1.7;
+        color: gray;
+        margin-bottom: 25px;
+    }
+
+    .box1 {
+        background: white;
+        border-radius: 14px;
+        padding: 30px 30px 30px;
+    }
+
+    .fuck-button {
+        position: absolute;
+ 
+        background: #000;
+    }
+
+    .love-wrap {
+        padding: 0 28px;
+        text-align: left;
+    }
+
+    .love-title {
+        font-family: "Great Vibes", cursive;
+        font-size: 56px;
+        line-height: 1;
+        color: red;
+        margin: 6px 0 18px;
+
+    }
+
+    .love-text {
+        font-size: 18px;
+        line-height: 1.8;
+        margin: 0 0 24px;
+    }
+
+    .hehe {
+        position: static;
+        left: 900px;
+        top: 1500px;
+        background-color: seagreen;
+        color: white;
+        border-radius: 15px;
+        padding: 15px 20px;
+        margin-left: 20px;
+    } */
+
+    .hexagon {
+    
+        width: 400px;
+        height: 200px;
+        background: #3498db;
+        -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+        clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+        background: url("https://plus.unsplash.com/premium_photo-1753985633451-91ae0ac80456?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    }
+
+    /* .square {
+        width: 400px;
+        height: 400px;
+        clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+        background: url("https://plus.unsplash.com/premium_photo-1753985633451-91ae0ac80456?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    }
+
+    .kdmv {
+        width: 400px;
+        height: 200px;
+        background: #3498db;
+        -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+        clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+        background: url("https://plus.unsplash.com/premium_photo-1753985633451-91ae0ac80456?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    }  */
+
+
+    .container1{
+        width: 100%;
+        height: 100%;
+        /* background-color: red; */
+        display: flex;
+    }
+    .container1 .left{
+        width: 50%;
+        /* background-color: #000; */
+        height:150%;
+        border-right: 5px solid  green;
+         /* background-color: rebeccapurple; */
+    }
+     
+       
+
+
+     .container1 .right{
+        width: 50%;
+        height: 150%;
+        /* background-color: blue; */
+        
+     }
+     
+     .container1 .yellow{
+        width : 25%;
+        height: 400px;
+        /* background-color: yellow; */
+
+     }
+      .container1 .left .yes{
+        padding: 15px 20px;
+        margin-left: 600px;
+        color: white;
+        border-radius: 15px;
+        background-color: seagreen;
+        
+     }
+     .container1 .orange{
+        width : 25%;
+        height: 400px;
+        /* background-color: orange; */
+
+     }
+     .container1 .left .brown{
+        width: 100%;
+        height: 100%;
+        background-color: brown;
+        
+     }
+     .container1 .right .date1{
+          padding: 15px 20px;
+        margin-left: 20px;
+        color: white;
+        border-radius: 15px;
+        background-color: seagreen;
+     }
+     .container1 .left .lightblue{
+        width: 100%;
+        height: 100%;
+        background-color: lightblue;
+
+     }
+     .container1 .right .pink{
+         width: 100%;
+        height: 100%;
+        background-color: pink;
+        padding: 
+     }
+     
+    .pannel{
+        width: 100%;
+        height: 100%;
+        color: white;
+        background-color: midnightblue;
+        justify-content: center;
+        position: sticky;
+        text-align: center;
+
+    }
+    .container1 .right .date2{
+        padding: 15px 20px;
+        
+        margin-left: 20px;
+        margin-top: 100px; 
+        color: white;
+        border-radius: 15px;
+        background-color: seagreen;
+    }
+    h1{
+        color: red;
+    }
+    .container2{
+     width: 100%;
+        height: 100%;
+        /* background-color: black; */
+        display: flex;}
+   .container2 .bottom{
+        
+        /* background-color: gray; */
+        width: 100%;
+        height: 400px;
+        position: absolute;
+        top: 2000px;
+    
+        
+    }
+    .container2 .bottom .inside{
+        justify-content: center;
+        text-align: center;
+        padding-left: 250px;
+        padding-right: 250px;
+        background-color: aqua;
+        margin-left: 300px;
+        margin-right: 300px;
+        
+    }
+    .section1{
+        text-align: center;
+        height: 200px;
+
+    }
+
+    .container2{
+        width: 100%;
+        height: 500px;
+    }
+    .box1{
+        width: 100%;
+        height: 500px;
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
+        gap: 20px;
+        overflow-x: auto;
+        
+    }
+    .box1::-webkit-scrollbar{
+        display: none;
+    }
+    .container2 .box1 .date{
+        width: 20%;
+        height: 50%;
+        border: 2px solid white;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        background-color: lightcoral;
+        color: white;
+        padding: 10px;
+        flex-shrink: 1;
+        position: static;
+        bottom: 0px;
+    }
+  
+form {
+  width: 300px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  font-family: Arial, sans-serif;
+}
+
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0 20px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #4CAF50;
+  box-shadow: 0 0 6px rgba(76, 175, 80, 0.4);
+  outline: none;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  width: 48%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+
+input[type="submit"] {
+  background: #4CAF50;
+  color: white;
+}
+
+input[type="submit"]:hover {
+  background: #45a049;
+}
+
+
+input[type="reset"] {
+  background: #f44336;
+  color: white;
+}
+
+input[type="reset"]:hover {
+  background: #d32f2f;
+}
+.container4{
+  
+display: flex;
+}
+.container4 .block1{
+    padding-right: 20px;
+    margin-right: 20px;
+    width: 50%;
+    height: 50%;
+    background-image: url(https://media.architecturaldigest.com/photos/65e7bfaf9257bd9a533e18eb/1:1/w_2399,h_2399,c_limit/0350E&J.jpg);
+}
+.container4 .block2{
+    padding-left: 20px;
+    margin-right: 20px;
+    width: 50%;
+    height: 50%;
+    background-image: url(https://www.benbushlandscapes.com/wp-content/uploads/2016/07/white-lotus.jpg);
+}
+.container4 .block1 .block2 .A1{
+    width: 250px;
+    height: 250px;
+    background-color: gray;
+    display: flex;
+    margin-left: 25px;
+    margin-right: 25px; 
+    text-align: center;
+    align-items: center;
+
+}
+
+.container4 .A2{
+     width: 250px;
+    height: 250px;
+    background-color: gray;
+    display: flex;
+    margin-left: 25px;
+    margin-right: 25px; 
+ 
+
+    
+}
+.container4 .row{
+    display: flex;
+}
+.container4 .row .A1{
+ width: 250px;
+    height: 250px;
+    background-color: gray;
+    display: flex;
+    margin-left: 25px;
+    margin-right: 25px; 
+  
+}
+.container4 .row .A2{
+     width: 250px;
+    height: 250px;
+    background-color: gray;
+    display: flex;
+    margin-left: 25px;
+    margin-right: 25px; 
+   
+}
+
+.container4 .row1{
+    display: flex;
+}
+
+.container4 .row1 .A3{
+     width: 250px;
+    height: 250px;
+    background-color: gray;
+    display: flex;
+    margin-left: 25px;
+    margin-right: 25px; 
+   margin-top: 25px;
+     
+}
+.container4 .row1 .A4{
+    width: 250px;
+    height: 250px;
+    background-color: gray;
+    display: flex;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px; 
+   
+}
